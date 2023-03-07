@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="./assets/mundo-logo1.png" alt="">
+    <p class="header-title">CARDÁPIO</p>
+    <div class="header-link">
+      <a href="./index.html"><i class="fa-regular fa-circle-left"></i>&nbsp;Voltar</a>
+    </div>
+  </header>
+  <div class="container">
+    <p>Instruções: Escolha um tamanho de açaí, os adicionais e as coberturas. Caso deseje adicionar outro açaí siga o
+      mesmo padrão. </p>
+    <div class="produtos">
+      <h2>Açaí</h2>
+      <ul>
+        <li>Açaí 300ml - R$ 5.00 <button onclick="adicionarItem('Açaí 300ml', 5.00)">Adicionar</button></li>
+        <li>Açaí 500ml - R$ 10.00 <button onclick="adicionarItem('Açaí 500ml', 10.00)">Adicionar</button></li>
+        <li>Açaí 700ml - R$ 17.00 <button onclick="adicionarItem('Açaí 700ml', 17.00)">Adicionar</button></li>
+        <li>Açaí 1 Litro - R$ 35.00 <button onclick="adicionarItem('Açaí 1 Litro', 35.00)">Adicionar</button></li>
+        <h2>Adicionais (R$1,00)</h2>
+        <li>Granola <button onclick="adicionarItem('Granola', 1.00)">Adicionar</button></li>
+        <li>Paçoca <button onclick="adicionarItem('Paçoca', 1.00)">Adicionar</button></li>
+        <li>Amendoim<button onclick="adicionarItem('Amendoim', 1.00)">Adicionar</button></li>
+        <li>Uva Passa <button onclick="adicionarItem('Uva Passa', 1.00)">Adicionar</button></li>
+        <li>Leite em pó<button onclick="adicionarItem('Leite em pó', 1.00)">Adicionar</button></li>
+        <li>Coco Ralado <button onclick="adicionarItem('Coco Ralado', 1.00)">Adicionar</button></li>
+        <li>M&M's<button onclick="adicionarItem(`M&M's`, 1.00)">Adicionar</button></li>
+        <h2>Coberturas (R$1,00)</h2>
+        <li>Leite condensado <button onclick="adicionarItem('Cobertura de Leite condensado', 1.00)">Adicionar</button>
+        </li>
+        <li>Chocolate <button onclick="adicionarItem('Cobertura de Chcolate', 1.00)">Adicionar</button></li>
+        <li>Morango<button onclick="adicionarItem('Cobertura de Morango', 1.00)">Adicionar</button></li>
+      </ul>
+    </div>
+
+    <div class="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="resumo"></ul>
+      <div class="finaliza-compra">
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+
+    </div>
+
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h2>Resumo da Compra</h2>
+        <ul id="resumo-modal"></ul>
+      </div>
+    </div>
+    <footer>
+      <a href="./desenvolvedor.html">
+        <i class="fa-solid fa-code"></i>&nbsp;
+        Desenvolvedor</a>
+  </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/f7c54e6de6.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

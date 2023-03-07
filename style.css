@@ -1,0 +1,202 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #D2D6EF;
+  color: #2F7560;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a005a0;
+  height: 70px;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+header img {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.header-title {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header a {
+  color: white;
+  font-size: 15px;
+  width: 90px;
+  font-weight: bold;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+.fa-bars {
+  margin-right: 5px;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  font-style: italic;
+}
+
+.produtos,
+.carrinho {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos ul,
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.produtos li,
+.carrinho li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+  width: 500px;
+  align-items: center;
+}
+
+.produtos li {
+  border-bottom: 1px dotted #8d7171;
+}
+
+.modal-item{
+  list-style: none;
+  border-bottom: 1px dotted black;
+  margin-top: 10px;
+  width:100%;
+}
+
+.total-modal{
+  list-style: none;
+  margin-top: 25px;
+}
+
+.finaliza-compra {
+  text-align: center;
+}
+
+button {
+  background-color: #00b859;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.remover {
+  background-color: #E73636;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button.remover:hover {
+  background-color: #890000;
+}
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a005a0;
+}
+
+footer a {
+  color: white;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+footer img {
+  height: 30px;
+  margin-right: 10px;
+}
