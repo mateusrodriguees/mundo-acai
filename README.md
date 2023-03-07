@@ -1,5 +1,4 @@
 # MUNDO DO AÇAÍ
-> Trilha Explorer
 
 ![preview](./.github/index.png)
 ![preview](./.github/cardapio.png)
